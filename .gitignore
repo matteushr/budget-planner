@@ -1,0 +1,9 @@
+node_modules
+data
+gist
+generated
+prisma
+.env
+package.json
+package-lock.json
+schema.sql

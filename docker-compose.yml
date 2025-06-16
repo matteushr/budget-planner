@@ -1,0 +1,14 @@
+services:
+  mysql:
+    container_name: okto-api
+    image: mysql:8.0
+    ports: 
+      - "3307:3306" # Use aspas para ports e outras configurações, é uma boa prática
+    environment:
+      MYSQL_ROOT_PASSWORD: admin    # <--- Mudei aqui! Define a senha do usuário 'root'
+      MYSQL_DATABASE: okto_api
+      # MYSQL_USER: root            # <--- Remova ou mude esta linha se não for criar outro usuário
+      # MYSQL_PASSWORD: admin       # <--- Se você quiser criar um usuário 'root' com a senha 'admin', basta o MYSQL_ROOT_PASSWORD
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - ./data/mysql:/var/lib/mysql
