@@ -2,8 +2,4 @@ node_modules
 data
 dist
 generated
-prisma
 .env
-package.json
-package-lock.json
-schema.sql

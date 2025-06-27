@@ -1,4 +1,4 @@
-import { Body, ConflictException, Controller, HttpCode, HttpException, Post } from '@nestjs/common'
+import { Body, ConflictException, Controller, HttpCode, Post } from '@nestjs/common'
 import { PrismaService } from 'src/prisma/prisma.service'
 
 @Controller('/accounts')
